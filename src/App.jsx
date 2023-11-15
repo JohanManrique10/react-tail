@@ -1,94 +1,82 @@
 import CrossIcon from "./components/CrossIcon";
 import MoonIcon from "./components/MoonIcon";
+import React from 'react';
 
 const App = () => {
   return (
-    <div className="bg-[url('./assets/images/bg-desktop-light.jpg')]
-    bg-contain bg-no-repeat bg-gray-300 min-h-screen ">
-      <header className="container mx-auto px-4">
-        <div className="flex justify-between pt-8"></div>
-        <h1 className="uppercase text-2x1 font-semibold text-white tracking-[0.3em]">todo</h1>
-
-
-        <button>
-          <MoonIcon/>
-        </button>
-        <div>
-
-          <form className="flex items-ceter gap-4 bg-white rounded-md overflow-hidden py-4 px-4 mt-8">
-            <span className="inline-block h-5 w-5 rounded-full border-2" ></span>
-            <input className="w-full text-gray-400" type="text" placeholder="Create a new todo..." />
-          </form>
-        </div>
-
+    <div className="bg-[url('./assets/images/fond.jpg')] bg-contain bg-no-repeat bg-white- min-h-screen ">
+      <br />
+      <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"></use></svg>
+          <span className="fs-4">Simple header</span>
+        </a>
+        <ul className="nav nav-pills">
+          <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Pricing</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">FAQs</a></li>
+          <li className="nav-item"><a href="#" className="nav-link active  " aria-current="page">LOGIN IN WITH GITHUB</a></li>
+        </ul>
       </header>
 
       <main className="container mx-auto px-4 mt-8">
-        <div className="bg-white rounded-md">
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">Complete onine JavaScript course</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
+        <div className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+          <div className="dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-3 rounded-3 shadow-lg" data-bs-theme="light">
+            <nav className="col-lg-8">
+              <ul className="list-unstyled d-flex flex-column gap-2">
+                <li>
+                  <a href="#" className="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg className="bi" width="24" height="24"><use xlinkHref="#image-fill"></use></svg>
+                    <div>
+                      <strong className="d-block">Main product</strong>
+                      <small>Take a tour through the product</small>
+                    </div>
+                  </a>
+                </li>
+                <img src="" alt="" />
+              </ul>
+            </nav>
+            <div className="d-none d-lg-block vr mx-4 opacity-10">&nbsp;</div>
+            <hr className="d-lg-none" />
+            <div className="col-lg-auto pe-3">
+              <nav>
+                <ul className="d-flex flex-column gap-2 list-unstyled small">
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
 
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">Jog around the park x3</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">10 minutes meditation</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
-
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">Read  for 1 hour</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">Pick up groceries</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
-
-          <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
-            <button  className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-            <p className="grow text-gray-400 text-sm">Complete Todo App on Frontend Mentor</p>
-            <button className="flex-none "> 
-              <CrossIcon/>
-            </button>
-          </article>
-
-          <section className="flex justify-between px-4 py-4 text-gray-300 text-sm">
-            <span className=""> 5 items lef</span>
-            <button>clear completed</button>
-          </section>
-
+          <div className="dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-3 rounded-3 shadow-lg" data-bs-theme="dark">
+            <nav className="col-lg-8">
+              <ul className="list-unstyled d-flex flex-column gap-2">
+                <li>
+                  <a href="#" className="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg className="bi" width="24" height="24"><use xlinkHref="#image-fill"></use></svg>
+                    <div>
+                      <strong className="d-block">Main product</strong>
+                      <small>Take a tour through the product</small>
+                    </div>
+                  </a>
+                </li>
+                
+              </ul>
+            </nav>
+            <div className="d-none d-lg-block vr mx-4 opacity-10">&nbsp;</div>
+            <hr className="d-lg-none" />
+            <div className="col-lg-auto pe-3">
+              <nav>
+                <ul className="d-flex flex-column gap-2 list-unstyled small">
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div className="bg-white rounded-md container mx-auto px-4 mt-8">
-          <section className="flex justify-center gap-4">
-            <button className="text-blue-500 font-semibold text-sm">All</button>
-            <button className="text-gray-400 font-semibold text-sm">Active</button>
-            <button className="text-gray-400 font-semibold text-sm">Completed</button>
-          </section>
-        </div>
-
-        <p className="flex  justify-center py-10 text-gray-400">Drag an Drop to reorder list</p>
       </main>
-
     </div>
-  )
-}
+  );
+};
+
 export default App;
